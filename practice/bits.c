@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdint.h>
 
 #define SET_BIT(REG, POS) (REG|=(1U<<POS))
 #define CLEAR_BIT(REG, POS) (REG&=~(1U<<POS))
 #define TOGGLE_BIT(REG, POS) (REG^=(1U<<POS))
-#define IS_SET_BIT(REG, POS) (REG & (1 << POS))
+#define IS_SET_BIT(REG, POS) (REG & (1U << POS))
 #define IS_ODD(REG) (REG & 1U)
 
 /* Problem: Count the set bits in a number using Bit Manipulation */
@@ -37,6 +38,23 @@ int is_power_of_two(unsigned int n)
     return (n & (n - 1)) == 0;
 }
 
-int main() {
-
+/* Problem: Find the highest nibble of a number uint8_t */
+uint8_t high_nibble(uint8_t num)
+{
+    return (num & 0xF0) >> 4 ;
 }
+
+/* Problem: Find the lowest nibble of a number uint8_t */
+uint8_t low_nibble(uint8_t num)
+{
+    return num & 0x0F;
+}
+
+/* Problem: Swap High and Low nibble of a number uint8_t */
+uint8_t swap_nibble(uint8_t num)
+{
+    uint8_t high = (num & 0xF0) >> 4;
+    uint8_t low = (num & 0x0F);
+    uint8_t swap = (low << 4) | high;
+}
+

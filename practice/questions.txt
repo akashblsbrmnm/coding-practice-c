@@ -169,3 +169,97 @@ Time complexity analysis of various algorithms.
 Space complexity optimization (e.g., reducing memory usage).
 
 Write code that optimizes for speed and memory (in scenarios like large arrays, embedded systems).
+
+-----
+1. C Language Fundamentals
+Const
+Volatile
+Static
+Storage classes
+Call by value and call by reference
+C memory layout
+Null check
+Secure coding
+Dangling pointers
+Function pointers
+Callbacks
+
+2. Memory Management & Low-Level Concepts
+Stack vs heap
+Dangling pointers
+Memory corruption debugging approach
+Structure padding and alignment
+How to detect endianness
+Virtual memory basics
+Paging
+Page faults
+
+3. Data Structures & Algorithms
+Data structures
+Sorting
+
+4. Process, Threading & OS Concepts
+Process vs thread
+fork() vs exec()
+Context switching
+Zombie process
+
+5. Synchronization & Concurrency
+Mutex
+Semaphores
+Process synchronization
+Deadlock debugging steps
+Race condition detection
+
+6. Linux System Programming & IPC
+open/read/write vs fopen/fread/fwrite
+IPC mechanisms
+
+7. Networking Fundamentals
+OSI Model
+L3 / L4 concepts
+TCP vs UDP
+TCP vs UDP differences
+TCP/IP header
+UDP header
+ARP
+DHCP
+DNS
+NAT / PAT
+IPv4 / IPv6
+WebSockets
+TCP 3-way handshake
+
+8. Build Systems & Toolchains
+Compilation vs linking
+Static vs dynamic libraries
+Symbol resolution
+Header guards
+Makefile basics
+Cross-compilation concepts
+
+9. Debugging, Diagnostics & Performance
+Program crashes only in production
+Performance bottleneck investigation
+Valgrind
+GDB
+Core dump
+
+10. Linux & System Tools
+Linux commands
+iptables
+
+11. Embedded & Boot Concepts
+Boot process (general-purpose system)
+Boot process (embedded system)
+
+12. Networking & Security (System Level)
+iptables
+Secure coding
+
+13. Interview Scenario-Based Questions
+What would you do if the program crashes only in production
+Memory corruption debugging approach
+Deadlock debugging steps
+Performance bottleneck investigation
+Race condition detection
