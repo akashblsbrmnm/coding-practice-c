@@ -63,25 +63,25 @@ int find_duplicate_element_in_array(int arr[], int n)
     return -1;
 }
 
-/* Problem: Find the second largest element in an array */
-int find_second_largest(int arr[], int n)
+/* Problem: Find the second first element in an array */
+int find_second(int arr[], int n)
 {
-    int largest = -1;
-    int second_largest = -1;
+    int first = -1;
+    int second = -1;
 
     for(int i = 0; i< n; i++)
     {
-        if(arr[i] > largest)
+        if(arr[i] > first)
         {
-            second_largest = largest;
-            largest = arr[i];
+            second = first;
+            first = arr[i];
         }
-        else if(arr[i] > second_largest && arr[i] != largest)
+        else if(arr[i] > second && arr[i] < first)
         {
-            second_largest = arr[i];
+            second = arr[i];
         }
     }
-    return second_largest;
+    return second;
 }
 
 /* Problem: Reverse a string in place using XOR swap */
@@ -212,11 +212,11 @@ int main()
     int arr[] = {12, 35, 1, 10, 34, 1};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    int second_largest = find_second_largest(arr, n);
-    if (second_largest != -1) {
-        printf("The second largest element is: %d\n", second_largest);
+    int second = find_second(arr, n);
+    if (second != -1) {
+        printf("The second first element is: %d\n", second);
     } else {
-        printf("No second largest element found.\n");
+        printf("No second first element found.\n");
     }
 
     int duplicate = find_duplicate_element_in_array(arr, n);
